@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Powered Document Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>AI-Powered Document Generator</h1>
+    <p>Generate a simple professional document from a topic.</p>
+
+    <label for="topic">Topic</label>
+    <input id="topic" placeholder="e.g. Leave request letter">
+
+    <label for="type">Document type</label>
+    <select id="type">
+      <option>Formal Letter</option>
+      <option>Report</option>
+      <option>Project Description</option>
+      <option>Resume Summary</option>
+    </select>
+
+    <button onclick="generateDocument()">Generate Document</button>
+
+    <textarea id="output" placeholder="Generated document will appear here..."></textarea>
+    <button class="secondary" onclick="downloadDocument()">Download Document</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
